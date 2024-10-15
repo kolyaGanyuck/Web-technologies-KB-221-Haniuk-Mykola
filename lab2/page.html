@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Приклад горизонтального меню</title>
+
+    <style>
+        * {
+            margin: 0.3vh;
+            padding: 0.3vh;
+        }
+
+        .main-header {
+            height: 15vh;
+            background-color: greenyellow;
+            text-align: center;
+            align-content: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1b1b21;
+            padding: 0 40vh 0 40vh;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 0 7vh 0 0;
+            color: darkgray;
+        }
+
+        form input {
+            border-radius: 10px;
+        }
+
+        form button {
+            padding: 0.3vh 0.5vh 0.3vh 0.5vh;
+        }
+
+        p:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px; /* Товщина лінії */
+            background-color: #ccc; /* Колір лінії */
+            margin-top: 5px; /* Відступ від тексту */
+        }
+
+        .image-collection, .video-collection {
+            font-size: 25px;
+        }
+
+        .main-content-container {
+            /*height: 100vh;*/
+            background-color: aliceblue;
+
+        }
+
+        .main-content {
+            padding: 0 40vh 0 40vh;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .security-img, .security-video {
+            display: flex;
+            gap: 1vh; /* Відстань між контейнерами зображень */
+            width: 100%;
+        }
+
+        .security-img-container, .security-video-container {
+            flex: 1; /* Розподіл ширини між блоками */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid darkgray;
+            height: 100%;
+        }
+
+        .security-img img, .security-video video {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .text-after-image, .text-after-video {
+            padding: 10px;
+        }
+
+        .footer {
+            height: 5vh;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+<div class="main-header">
+    <h1>Головний заголовок</h1>
+    <h4>Підзаголовок</h4>
+</div>
+<nav>
+    <div>
+        <a href="#">Головна</a>
+        <a href="#">Про нас</a>
+        <a href="#">Контакти</a>
+    </div>
+    <div>
+        <form>
+            <input type="text" placeholder="Логін">
+            <input type="password" placeholder="Пароль">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</nav>
+<div class="main-content-container">
+    <div class="main-content">
+
+        <p class="image-collection">Image collection </p>
+
+        <div class="security-img">
+
+            <div class="security-img-container">
+                <img src="images/secyrity.jpg">
+                <div class="text-after-image">
+                    Security is the degree of resistance to, or protection from, harm.
+                    It applies to any vulnerable and valuable asset, such as a person, dwelling,
+                    community, item, nation, or organization Security is the degree of
+                    <button>Read more</button>
+                </div>
+            </div>
+
+            <div class="security-img-container">
+                <img src="images/secyrity.jpg">
+                <div class="text-after-image">
+                    Security is the degree of resistance to, or protection from, harm.
+                    It applies to any vulnerable and valuable asset, such as a person, dwelling,
+                    community, item, nation, or organization Security is the degree of
+                    <button>Read more</button>
+                </div>
+            </div>
+
+            <div class="security-img-container">
+                <img src="images/secyrity.jpg">
+                <div class="text-after-image">
+                    Security is the degree of resistance to, or protection from, harm.
+                    It applies to any vulnerable and valuable asset, such as a person, dwelling,
+                    community, item, nation, or organization Security is the degree of
+                    <button>Read more</button>
+                </div>
+            </div>
+
+        </div>
+        <p class="video-collection">Video collection</p>
+
+        <div class="video-container">
+
+            <div class="security-video">
+
+                <div class="security-video-container">
+                    <video src="video/Information_security.mp4" controls></video>
+                    <div class="text-after-video">
+                        Security is the degree of resistance to, or protection from, harm.
+                        It applies to any vulnerable and valuable asset, such as a person, dwelling,
+                        community, item, nation, or organization Security is the degree of
+                        <button>Read more</button>
+                    </div>
+                </div>
+
+                <div class="security-video-container">
+                    <video src="video/Information_security.mp4" controls></video>
+                    <div class="text-after-video">
+                        Security is the degree of resistance to, or protection from, harm.
+                        It applies to any vulnerable and valuable asset, such as a person, dwelling,
+                        community, item, nation, or organization Security is the degree of
+                        <button>Read more</button>
+                    </div>
+                </div>
+
+                <div class="security-video-container">
+                    <video src="video/Information_security.mp4" controls></video>
+                    <div class="text-after-video">
+                        Security is the degree of resistance to, or protection from, harm.
+                        It applies to any vulnerable and valuable asset, such as a person, dwelling,
+                        community, item, nation, or organization Security is the degree of
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer"></div>
+</body>
+</html>

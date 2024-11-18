@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex7</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .input {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .result {
+            text-align: center;
+            width: 20%;
+            padding: 10px;
+            background-color: aliceblue;
+            border: 2px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="input">
+ <label for="a">Enter guess</label>
+    <input type="number" id="a">
+    <button type="button" onclick="guess()">Click</button>
+</div>
+
+<div id="result" class="result"></div>
+</div>
+<script src="js/ex7.js"></script>
+</body>
+</html>

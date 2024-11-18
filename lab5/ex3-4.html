@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex3</title>
+    <style>
+        .calculator {
+            width: 200px;  
+            margin: 0 auto;
+        }
+        .calculator div {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .calculator input, button, select{
+            background-color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+<div class="calculator">
+    <div><label for="a">Enter a</label>
+        <input type="number" id="a">
+    </div>
+    <div>
+        <label for="b">Enter b</label>
+        <input type="number" id="b">
+    </div>
+    <div>
+        <select id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+    </div>
+
+    <button type="button" onclick="calculator()">Calculate</button>
+</div>
+<script src="js/ex3-4case.js"></script>
+</body>
+</html>

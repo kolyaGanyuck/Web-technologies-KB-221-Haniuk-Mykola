@@ -15,7 +15,7 @@ function addSome(){
     let block = document.getElementById("block");
     block.textContent = "1213";
     block.style.display = "flex";
-    // block.style.textAlign = "center"
-    // block.style.alignItems = "center";
-    // block.style.justifyContent = "center";
+    block.style.textAlign = "center"
+    block.style.alignItems = "center";
+    block.style.justifyContent = "center";
 }
